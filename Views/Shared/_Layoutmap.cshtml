@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    <title>Choropleth Map</title>
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <div style="text-align:left;">
+        <svg preserveAspectRatio="xMidYMin" id="svgMain" width="960" height="500"></svg>
+    </div>
+
+    <script src="~/Scripts/bundle.js"></script>
+
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
